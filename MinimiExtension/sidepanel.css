@@ -1,0 +1,151 @@
+/* 
+  A pastel, minimal look with one main background color 
+  and the same accent color for all buttons (Summarize, Save Note, Delete).
+*/
+
+/* Root Variables */
+:root {
+    --bg-main: #F3ECE2;      /* Soft, unified background color */
+    --accent: #C9ADA7;       /* Soft mauve for all buttons */
+    --accent-hover: #B59890; /* Slightly darker mauve for hover */
+    --text-main: #333;       /* Main text color */
+    --border-color: #D6CBBE; /* Subtle border color */
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Inter", Arial, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+  }
+  
+  /* Container for everything */
+  .side-panel {
+    width: 100%;
+    max-width: 340px;
+    min-height: 100vh;
+    background-color: var(--bg-main);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Header */
+  .side-panel header h1 {
+    font-size: 1.4rem;
+    margin: 0 0 16px 0;
+    color: var(--text-main);
+  }
+  
+  /* Operation Button Section */
+  .operations {
+    margin-bottom: 16px;
+  }
+  
+  .operations button {
+    background-color: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .operations button:hover {
+    background-color: var(--accent-hover);
+  }
+  
+  /* Output Section */
+  .output h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+  }
+  
+  #results {
+    background-color: var(--bg-main);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 10px;
+    min-height: 60px;
+    font-size: 0.9rem;
+    overflow-y: auto;
+    margin-bottom: 20px;
+  }
+  
+  /* Notes Section */
+  .notes h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+  }
+  
+  #notesInput {
+    width: 100%;
+    height: 60px;
+    padding: 8px;
+    font-size: 0.9rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    resize: vertical;
+    background-color: var(--bg-main);
+    margin-bottom: 10px;
+  }
+  
+  #saveNote {
+    background-color: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-bottom: 15px;
+  }
+  
+  #saveNote:hover {
+    background-color: var(--accent-hover);
+  }
+  
+  /* Container for the list of notes */
+  #notesList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Individual note item styling */
+  .note-item {
+    background-color: var(--bg-main); 
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .note-content {
+    flex: 1;
+    font-size: 0.9rem;
+    margin-right: 8px;
+  }
+  
+  /* Delete button for notes */
+  .delete-note {
+    background-color: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .delete-note:hover {
+    background-color: var(--accent-hover);
+  }
+  

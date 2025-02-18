@@ -1,13 +1,12 @@
 package com.example.Minimi;
 
+import lombok.Getter;
 
-import lombok.Data;
-
-@Data
-
+//LOMBOK REFUSES TO WORK
+@Getter
 public class ResearchRequest {
 
-    private String content; //lol content itself
-    private String operation; //summarizes content
+    private String content; // lol content itself
+    private String operation; // summarizes content
 
 }

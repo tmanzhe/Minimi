@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minimi Side Panel</title>
+  <link rel="stylesheet" href="sidepanel.css" />
+</head>
+<body>
+  <div class="side-panel">
+    <header>
+      <h1>Minimi</h1>
+    </header>
+
+    <!-- Operation Button -->
+    <nav class="operations">
+      <button id="summarize">summarize!</button>
+    </nav>
+
+    <!-- Output Section -->
+    <section class="output">
+      <h2>Output</h2>
+      <div id="results">
+        Your output will appear here.
+      </div>
+    </section>
+    <hr />
+
+    <!-- Notes Section -->
+    <section class="notes">
+      <h2>Notes</h2>
+      <textarea id="notesInput" placeholder="enter your note here..."></textarea>
+      <button id="saveNote">save note</button>
+      <div id="notesList"></div>
+    </section>
+  </div>
+  <script src="sidepanel.js"></script>
+</body>
+</html>
