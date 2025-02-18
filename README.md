@@ -22,10 +22,9 @@ Minimi is a Chrome extension built to help students quickly minimize long texts 
 
 ### Spring Boot Backend
 
-1. **Configure** your Gemini API settings in `application.properties`:
-   ```properties
-   gemini.api.url=https://your-gemini-api-url/
-   gemini.api.key=your-api-key
+1. **Configure** no need to do anything in applications.properties. it should look like this. all you have to do is add gemini key in env 
+   gemini.api.url=https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=
+   gemini.api.key=${GEMINI_API_KEY}
 
 2. Build and Run the backend:
   mvn clean install
