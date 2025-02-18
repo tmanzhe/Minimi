@@ -18,7 +18,7 @@ Minimi is a Chrome extension built to help students quickly minimize long texts 
 4. **Display & Notes:**  
    The extension displays the formatted output and offers a simple note-taking system for additional study aids.
 
-## To run locally
+## To run locally (for those students who are just too eager) 
 
 ### Spring Boot Backend
 
